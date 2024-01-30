@@ -9,6 +9,14 @@
     color: #CB9D7E;
 }
 
+.color-text {
+    color: #5A5A5A;
+}
+
+.bg-color-text {
+    background-color: #9E683F;
+}
+
 .bg-color-base {
     background-color: #CB9D7E;
 }
@@ -18,6 +26,49 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.text-style-cs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 590px;
+}
+
+.text-style-cs::after {
+    content: " ";
+    max-width: 200px;
+    width: 100%;
+    height: 2px;
+    background-color: #CB9D7E;
+    margin-left: 20px;
+}
+
+.text-style-cs::before {
+    content: " ";
+    max-width: 200px;
+    width: 100%;
+    height: 2px;
+    background-color: #CB9D7E;
+    margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .text-style-cs::before {
+        max-width: 60px;
+    }
+
+    .text-style-cs::after {
+        max-width: 60px;
+
+    }
+}
+
+.style-img-cs {
+    -webkit-mask-image: url('../image/MASKING.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
 }
 
 @keyframes flower-animation {
