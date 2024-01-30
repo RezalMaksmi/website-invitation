@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+
+.font-base {
+    font-family: 'Elsie Swash Caps', serif;
+
+}
+
+.color-base {
+    color: #CB9D7E;
+}
+
+.bg-color-base {
+    background-color: #CB9D7E;
+}
+
+.flower-animate-cs {
+    animation-name: flower-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flower-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(6deg) scale(1.18);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
