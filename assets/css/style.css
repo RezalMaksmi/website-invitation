@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
 
+:root {
+    scroll-behavior: smooth;
+}
+
 .font-base {
     font-family: 'Elsie Swash Caps', serif;
 
@@ -9,8 +13,12 @@
     color: #CB9D7E;
 }
 
+.active {
+    display: none;
+}
+
 .color-text {
-    color: #5A5A5A;
+    color: #3F3737;
 }
 
 .bg-color-text {
