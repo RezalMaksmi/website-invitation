@@ -21,6 +21,10 @@
     background-color: #CB9D7E;
 }
 
+.bg-rgba{
+    background-color: rgba(0, 0, 0,.7);
+}
+
 .flower-animate-cs {
     animation-name: flower-animation;
     animation-duration: 5s;
