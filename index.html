@@ -34,10 +34,12 @@
             </a>
         </nav>
         
-           
-        <button class="bottom-20 right-5 lg:right-[33%] lg:bottom-24 z-50 fixed w-8 h-8 rounded-full bg-color-base text-white font-bold flex justify-center items-center" onclick="playPause()">O</button>
-    </div> 
-    <button class="bottom-32 left-10 z-50 fixed w-9 h-9 rounded-full bg-color-base text-white font-bold" id="" onclick="toggleFullScreen()">&#x26F6; </button>
+
+        <button class="bottom-20 right-5 lg:right-[33%] lg:bottom-24 z-50 fixed w-8 h-8 rounded-full bg-color-base text-white font-bold flex justify-center items-center" onclick="playPause()">O</button>    
+    </div>
+    
+    
+        <button class="bottom-32 left-10 z-50 fixed w-9 h-9 rounded-full bg-color-base text-white font-bold" id="" onclick="toggleFullScreen()">&#x26F6; </button>
    
     <audio id="myAudio" src="./assets/music/Yovie-Nuno-Janji-Suci-Video-Clip.mp3"></audio>
 
@@ -60,8 +62,7 @@
         <img src="./assets/image/bunga-1.png" class="flower-animate-cs absolute z-10 top-[-10px] lg:w-[200px] w-[130px]" alt="">
          <img src="./assets/image/bunga-2.png" class="flower-animate-cs absolute z-10 bottom-[-10px] right-0 lg:w-[200px] w-[130px]" alt="">
     </section>
-
-    <main id="card-invitation" class="hidden">
+        <main id="card-invitation" class="hidden">
         <!-- section hero 1 -->
         <section id="1" class="relative overflow-hidden lg:bg-[url('/assets/image/BG-desktop.png')] bg-[url('/assets/image/BG-01.jpg')]  w-full h-screen bg-no-repeat bg-cover bg-center ">
             <div class="container mx-auto flex flex-col justify-center items-center h-full">
@@ -150,6 +151,8 @@
         </section>
         <!-- / section 2 mempelai / -->
 
+        <!-- ------------ -->
+   
         <!-- section 3 waktu -->
         <section class="relative overflow-hidden lg:bg-[url('/assets/image/BG-desktop.png')]  bg-[url('/assets/image/BG-01.jpg')]  w-full h-auto bg-no-repeat bg-cover bg-center">
             <div class="container lg:px-20 px-0 mx-auto flex flex-col justify-center items-center w-full h-full">
@@ -249,23 +252,40 @@
                         Wishes
                     </span>
                     <div class="gallery w-full flex justify-center items-center ">
-                        <div class="mx-auto thumbnails w-full flex flex-row justify-center">
-                            <img class="rounded-md" src="https://undanganonlineku.net/wp-content/uploads/2022/05/RIF08534.webp" alt="Foto 1" onclick="openModal(); currentSlide(1)">
-                            <img class="rounded-md" src="https://undanganonlineku.net/wp-content/uploads/2022/05/U1160794.webp" alt="Foto 2" onclick="openModal(); currentSlide(2)">
-                            <img class="rounded-md" src="https://undanganonlineku.net/wp-content/uploads/2022/05/U1160681-e1688275149600.webp" alt="Foto 3" onclick="openModal(); currentSlide(3)">
-                            </div>
+                        <div class=" thumbnails w-full grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <img class="rounded-md w-full" src="./assets/image/galery/foto-1.jpg" alt="Foto 1" onclick="openModal(); currentSlide(1)">
+                            <img class="rounded-md" src="./assets/image/galery/foto-2.jpg" alt="Foto 2" onclick="openModal(); currentSlide(2)">
+                            <img class="rounded-md" src="./assets/image/galery/foto-3.jpg" alt="Foto 3" onclick="openModal(); currentSlide(3)">
+                            <img class="rounded-md w-full" src="./assets/image/galery/foto-4.jpg" alt="Foto 4" onclick="openModal(); currentSlide(4)">
+                            <img class="rounded-md" src="./assets/image/galery/foto-5.jpg" alt="Foto 5" onclick="openModal(); currentSlide(5)">
+                            <img class="rounded-md" src="./assets/image/galery/foto-6.jpg" alt="Foto 6" onclick="openModal(); currentSlide(6)">
+                        </div>
                             
                             <div id="myModal" class="modal">
-                            <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="card-btncs-galery flex flex-row gap-3 justify-center items-center">
+                                    <img src="./assets/image/icon-menu/full-screen.svg" width="50%" alt="" class="w-5 h-5">
+                                    <img src="./assets/image/icon-menu/zoom.svg" width="50%" alt="" class="w-5 h-5">
+                                    <img src="./assets/image/icon-menu/share.svg" width="50%" alt="" class="w-6 h-6 -ml-1">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                </div>
                             <div class="modal-content">
                                 <div class="mySlides">
-                                <img src="https://undanganonlineku.net/wp-content/uploads/2022/05/RIF08534.webp" alt="Foto 1">
+                                    <img src="./assets/image/galery/foto-1.jpg" alt="Foto 1">
                                 </div>
                                 <div class="mySlides">
-                                <img src="https://undanganonlineku.net/wp-content/uploads/2022/05/U1160794.webp" alt="Foto 2">
+                                    <img src="./assets/image/galery/foto-2.jpg" alt="Foto 2">
                                 </div>
                                 <div class="mySlides">
-                                <img src="https://undanganonlineku.net/wp-content/uploads/2022/05/U1160681-e1688275149600.webp" alt="Foto 3">
+                                    <img src="./assets/image/galery/foto-3.jpg" alt="Foto 3">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="./assets/image/galery/foto-4.jpg" alt="Foto 4">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="./assets/image/galery/foto-5.jpg" alt="Foto 5">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="./assets/image/galery/foto-6.jpg" alt="Foto 6">
                                 </div>
                                 
                                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -358,7 +378,7 @@
             <img src="./assets/image/bunga-1.png" class="flower-animate-cs absolute z-10 top-[-20px] lg:w-[200px] w-[130px]" alt="">
             <img src="./assets/image/bunga-2.png" class="flower-animate-cs absolute z-10 bottom-[-10px] right-0 lg:w-[200px] w-[130px]" alt="">
         </section>
-        <!-- section 5 send ucapan -->
+<!-- section 5 send ucapan -->
 
          <!-- section 6 send Protokol -->
          <section  class="relative overflow-hidden lg:bg-[url('/assets/image/BG-desktop.png')]  bg-[url('/assets/image/BG-01.jpg')]  w-full h-auto bg-no-repeat bg-cover bg-center">
@@ -483,7 +503,11 @@
             <img src="./assets/image/bunga-2.png" class="flower-animate-cs absolute z-10 bottom-[-10px] right-0 lg:w-[200px] w-[130px]" alt="">
         </section>
        
-          
+    </main>
+    <script src="script.js"></script>
+
+        
+
     </main>
     <script src="./assets/js/comment.js"></script>
     <script src="./assets/js/script.js"></script>
